@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bem-vindo</title>
+	<style>
+		/* Estilização global */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		body {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(135deg, #4e54c8, #8f94fb);
+			color: #fff;
+		}
+
+		.container {
+			text-align: center;
+			padding: 40px;
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 20px;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+			animation: aparecer 1s ease-in-out;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 1.1rem;
+			margin-bottom: 30px;
+		}
+
+		button {
+			padding: 15px 30px;
+			font-size: 1rem;
+			font-weight: bold;
+			color: #4e54c8;
+			background-color: #fff;
+			border: none;
+			border-radius: 30px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		button:hover {
+			background-color: #e0e0e0;
+			transform: scale(1.05);
+		}
+
+		@keyframes aparecer {
+			from { opacity: 0; transform: scale(0.9); }
+			to { opacity: 1; transform: scale(1); }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Bem-vindo ao nosso site!</h1>
+		<p>Clique no botão abaixo para acessar a página de mercadorias.</p>
+		<button onclick="window.location.href='Mercadorias.html'">Ver Mercadorias</button>
+	</div>
+</body>
+</html>
